@@ -1,0 +1,238 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#introduction{
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#propertyListing {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.propertyItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.propertyItem:hover {
+    transform: translateY(-5px);
+}
+
+.propertyImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.propertyInfoImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.available, .not-available {
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.available {
+    background-color: green;
+}
+
+.not-available {
+    background-color: red;
+}
+
+
+/* Introduction Section */
+
+#introduction {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+  }
+  
+  #introduction h2 {
+    color: #fff;
+    font-size: 36px;
+  }
+  
+  #introduction p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+
+  main {
+    padding: 40px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #111;
+  }
+  
+ /* Services Section */
+
+#services {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#services h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  padding-left: 20px;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+}
+
+.service-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  color: #111;
+}
+
+#uniqueness {
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+#uniqueness h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.uniqueness-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.uniqueness-item:hover{
+  background-color: #f7d9d9;
+}
